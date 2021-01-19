@@ -2,6 +2,7 @@
   "name": "quiz-app",
   "version": "0.0.1",
   "scripts": {
+    "start": "live-server --no-css-inject",
     "prettier:write": "prettier --write .",
     "stylelint": "npx stylelint \"**/*.css\"",
     "test": "htmlhint && prettier --check . && npm run stylelint"
@@ -20,6 +21,7 @@
   "homepage": "https://github.com/badabam/quiz-app#readme",
   "description": "",
   "devDependencies": {
+    "live-server": "^1.2.1",
     "htmlhint": "^0.14.2",
     "prettier": "2.2.1",
     "stylelint": "^13.8.0",
