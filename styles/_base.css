@@ -7,6 +7,9 @@ body {
   font-size: 112.5%;
   line-height: 1.5;
   margin: 0;
+  max-width: 500px;
+  margin: 0 auto;
+  border: 1px solid black;
 }
 
 h1,
@@ -18,4 +21,9 @@ h3 {
 input,
 button {
   font-size: 1em;
+}
+
+header {
+  background-color: grey;
+  text-align: center;
 }
