@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <div class="app-grid">
+      <header>
+        <h1>Quiz App</h1>
+      </header>
+      <main>
+        <section class="quiz-card">
+          <h1 class="quiz-card__heading">Question:</h1>
+          <p class="quiz-card__question">What is the capital of Chile?</p>
+          <ul class="quiz-card__taglist">
+            <li class="quiz-card__tag">&num;travel</li>
+            <li class="quiz-card__tag">&num;geography</li>
+            <li class="quiz-card__tag">&num;capital cities</li>
+          </ul>
+          <details>
+            <summary>
+              <button class="quiz-card__button">Show answer</button>
+            </summary>
+            <p class="quiz-card__answer">Santiago de Chile</p>
+          </details>
+        </section>
+        <section class="quiz-card">
+          <h1 class="quiz-card__heading">Question:</h1>
+          <p class="quiz-card__question">What is the capital of Germany?</p>
+          <ul class="quiz-card__taglist">
+            <li class="quiz-card__tag">&num;travel</li>
+            <li class="quiz-card__tag">&num;geography</li>
+            <li class="quiz-card__tag">&num;capital cities</li>
+          </ul>
+          <details>
+            <summary>
+              <button class="quiz-card__button">Show answer</button>
+            </summary>
+            <p class="quiz-card__answer">Berlin</p>
+          </details>
+        </section>
+      </main>
+      <nav class="navigation">
+        <a href="#" class="navigation__item">
+          <img src="../images/home.png" alt="" width="50" />
+        </a>
+        <a href="#" class="navigation__item">
+          <img src="../images/bookmark.jpg" alt="" width="50" />
+        </a>
+        <a href="#" class="navigation__item">
+          <img src="../images/create.png" alt="" width="50" />
+        </a>
+        <a href="#" class="navigation__item">
+          <img src="../images/setting.jpg" alt="" width="50" />
+        </a>
+      </nav>
+    </div>
+  </body>
+</html>
