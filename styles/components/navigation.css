@@ -9,6 +9,8 @@
 }
 
 .navigation__item {
+  display: flex;
+  flex-direction: column;
   padding: 0;
   margin: 0;
   text-decoration: none;
