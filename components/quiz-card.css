@@ -5,6 +5,14 @@
   border: 1px solid black;
   margin: 20px;
   padding: 0 0 10px 0;
+  border-radius: 5px;
+  position: relative;
+}
+
+.quiz-card__bookmark {
+  position: absolute;
+  top: -15px;
+  right: 10px;
 }
 
 .quiz-card__heading {
@@ -13,6 +21,8 @@
 }
 
 .quiz-card__question {
+  font-size: 125%;
+  text-align: center;
 }
 .quiz-card__taglist {
   list-style: none;
@@ -21,13 +31,13 @@
 }
 .quiz-card__tag {
   display: inline-block;
-
   border-radius: 3px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
   background-color: grey;
 }
 .quiz-card__answer {
   color: green;
+  text-align: center;
 }
 .quiz-card__button {
   border: 2px solid black;
