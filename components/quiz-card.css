@@ -2,11 +2,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid black;
+  border: 2px dotted black;
   margin: 20px;
   padding: 0 0 10px 0;
   border-radius: 5px;
   position: relative;
+  width: 80%;
+  background-color: white;
 }
 
 .quiz-card__bookmark {
@@ -16,29 +18,51 @@
 }
 
 .quiz-card__heading {
-  color: blue;
+  font-size: 180%;
+  color: #536173;
   margin: 20px 0 0 0;
+  font-family: 'Yusei Magic', sans-serif;
 }
 
 .quiz-card__question {
   font-size: 125%;
   text-align: center;
 }
+
+.quiz-card__question::first-letter {
+  font-size: 150%;
+}
 .quiz-card__taglist {
   list-style: none;
   padding: 0;
   margin: 0 0 20px 0;
+  text-align: center;
 }
 .quiz-card__tag {
   display: inline-block;
   border-radius: 3px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
   background-color: grey;
+  padding: 1px 3px 1px 3px;
 }
-.quiz-card__answer {
-  color: green;
+
+.quiz-card__button {
+  background-color: #f6c23b;
+  border: none;
+  padding: 5px;
   text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 100%;
 }
+
+.quiz-card__answer {
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-style: double;
+  font-size: 125%;
+}
+
 .quiz-card__button {
   border: 2px solid black;
 }

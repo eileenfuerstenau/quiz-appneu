@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
 @import '_base.css';
 @import '_utilities.css';
+@import '_variables.css';
 @import '../components/quiz-card.css';
 @import '../components/app-grid.css';
 @import '../components/navigation.css';
