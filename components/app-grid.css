@@ -2,9 +2,10 @@
   display: grid;
   grid-template-rows: 100px auto 100px;
   grid-template-columns: 100%;
-  justify-content: center;
+  height: 100vh;
 }
 
 .app-grid__main {
   overflow-y: scroll;
+  padding: 5px;
 }

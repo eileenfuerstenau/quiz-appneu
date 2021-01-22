@@ -30,4 +30,5 @@ input {
   align-items: center;
   justify-content: center;
   background-color: #c8cad1;
+  border-bottom: 1px solid black;
 }
