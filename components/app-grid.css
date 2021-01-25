@@ -8,4 +8,5 @@
 .app-grid__main {
   overflow-y: scroll;
   padding: 5px;
+  justify-content: center;
 }
