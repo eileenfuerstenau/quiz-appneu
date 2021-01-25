@@ -81,6 +81,8 @@ details summary {
   border-bottom: 1px solid black;
   list-style: none;
   text-align: center;
+  margin: 10px;
+  display: block;
 }
 
 details summary::after {
@@ -99,6 +101,6 @@ details[open] summary::after {
 }
 
 details p {
-  margin: 5px 0 0 0;
+  margin: 10px;
   text-align: center;
 }
