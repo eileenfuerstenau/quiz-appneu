@@ -1,0 +1,35 @@
+.color-green {
+  display: inline-block;
+  background: linear-gradient(
+      transparent,
+      transparent 50%,
+      green 0,
+      green 85%,
+      transparent 0
+    )
+    no-repeat;
+}
+
+.color-red {
+  display: inline-block;
+  background: linear-gradient(
+      transparent,
+      transparent 50%,
+      darkred 0,
+      darkred 85%,
+      transparent 0
+    )
+    no-repeat;
+}
+
+.color-yellow {
+  display: inline-block;
+  background: linear-gradient(
+      transparent,
+      transparent 50%,
+      goldenrod 0,
+      goldenrod 85%,
+      transparent 0
+    )
+    no-repeat;
+}
