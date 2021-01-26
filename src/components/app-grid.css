@@ -9,10 +9,15 @@
   display: grid;
   overflow-y: scroll;
   padding: 5px;
-  justify-content: center;
 }
 
-.app-grid__main > *:last-child::after {
+.page {
+  justify-content: center;
+  display: grid;
+  padding: 5px;
+}
+
+.page > *:last-child::after {
   content: '';
   display: block;
   position: absolute;

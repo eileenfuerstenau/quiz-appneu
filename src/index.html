@@ -11,75 +11,154 @@
     <header class="mainheader">
       <h1>Quiz Me</h1>
     </header>
-    <main class="app-grid__main">
-      <section class="quiz-card">
-        <span role="button" class="quiz-card__bookmark"> 
-          <i class="far fa-bookmark fa-2x fa-2x"></i></i>
-        </span>
-        <h1 class="quiz-card__heading">Question:</h1>
-        <p class="quiz-card__question">What is the capital of Chile?</p>
-        <ul class="quiz-card__taglist">
-          <li class="quiz-card__tag-blue">&num;travel</li>
-          <li class="quiz-card__tag-yellow">&num;geography</li>
-          <li class="quiz-card__tag-red">&num;capital cities</li>
-        </ul>
-        <details>
-          <summary>
-           Show answer
-          </summary>
-          <p>Santiago de Chile ✔️</p>
-        </details>
-      </section>
-      <section class="quiz-card">
-        <span role="button" class="quiz-card__bookmark"> <i class="far fa-bookmark fa-2x"></i></i></span>
-        <h1 class="quiz-card__heading">Question:</h1>
-        <p class="quiz-card__question">Who won King of the Air 2020?</p>
-        <ul class="quiz-card__taglist">
-          <li class="quiz-card__tag-yellow">&num;sports</li>
-          <li class="quiz-card__tag-red">&num;kitesurfing</li>
-          <li class="quiz-card__tag-green">&num;champions</li>
-        </ul>
-        <details>
-          <summary>
-           Show answer
-          </summary>
-          <p>Jesse Richman ✔️</p>
-        </details>
-      </section>
-      <section class="quiz-card">
-        <span role="button" class="quiz-card__bookmark"> <i class="far fa-bookmark fa-2x"></i></i></span>
-        <h1 class="quiz-card__heading">Question:</h1>
-        <p class="quiz-card__question">Which championships make up the Grand Slam?</p>
-        <ul class="quiz-card__taglist">
-          <li class="quiz-card__tag-red">&num;tennis</li>
-          <li class="quiz-card__tag-blue">&num;sports</li>
-          <li class="quiz-card__tag-yellow">&num;champions</li>
-        </ul>
-        <details>
-          <summary>
+
+  <main class="app-grid__main"> 
+
+    <section class="page" data-js="pageHome"> 
+          <section class="quiz-card">
+            <span role="button" class="quiz-card__bookmark"> 
+              <i class="far fa-bookmark fa-2x fa-2x"></i></i>
+            </span>
+            <h1 class="quiz-card__heading">Question:</h1>
+            <p class="quiz-card__question">What is the capital of Chile?</p>
+            <ul class="quiz-card__taglist">
+              <li class="quiz-card__tag-blue">&num;travel</li>
+              <li class="quiz-card__tag-yellow">&num;geography</li>
+              <li class="quiz-card__tag-red">&num;capital cities</li>
+            </ul>
+            <details>
+              <summary>
+              Show answer
+              </summary>
+              <p>Santiago de Chile ✔️</p>
+            </details>
+          </section>
+          <section class="quiz-card">
+            <span role="button" class="quiz-card__bookmark"> <i class="far fa-bookmark fa-2x"></i></i></span>
+            <h1 class="quiz-card__heading">Question:</h1>
+            <p class="quiz-card__question">Who won King of the Air 2020?</p>
+            <ul class="quiz-card__taglist">
+              <li class="quiz-card__tag-yellow">&num;sports</li>
+              <li class="quiz-card__tag-red">&num;kitesurfing</li>
+              <li class="quiz-card__tag-green">&num;champions</li>
+            </ul>
+            <details>
+              <summary>
+              Show answer
+              </summary>
+              <p>Jesse Richman ✔️</p>
+            </details>
+          </section>
+          <section class="quiz-card">
+            <span role="button" class="quiz-card__bookmark"> <i class="far fa-bookmark fa-2x"></i></i></span>
+            <h1 class="quiz-card__heading">Question:</h1>
+            <p class="quiz-card__question">Which championships make up the Grand Slam?</p>
+            <ul class="quiz-card__taglist">
+              <li class="quiz-card__tag-red">&num;tennis</li>
+              <li class="quiz-card__tag-blue">&num;sports</li>
+              <li class="quiz-card__tag-yellow">&num;champions</li>
+            </ul>
+            <details>
+              <summary>
+                Show answer
+              </summary>
+              <p>Wimbledon, U.S. Open, French Open and Australian Open ✔️</p>
+            </details>
+          </section>
+    </section>
+
+
+    <section data-js="pageBookmark" class="hidden page">
+
+        <section class="quiz-card">
+          <span role="button" class="quiz-card__bookmark"> <i class="fas fa-bookmark fa-2x"></i></span>
+          <h1 class="quiz-card__heading">Question:</h1>
+          <p class="quiz-card__question">What is the capital of Chile?</p>
+          <ul class="quiz-card__taglist">
+            <li class="quiz-card__tag-blue">&num;travel</li>
+            <li class="quiz-card__tag-yellow">&num;geography</li>
+            <li class="quiz-card__tag-red">&num;capital cities</li>
+          </ul>
+          <details>
+            <summary>
             Show answer
-          </summary>
-          <p>Wimbledon, U.S. Open, French Open and Australian Open ✔️</p>
-        </details>
-      </section>
-    </main>
+            </summary>
+            <p>Santiago de Chile ✔️</p>
+          </details>
+        </section>
+        <section class="quiz-card">
+          <span role="button" class="quiz-card__bookmark"> <i class="fas fa-bookmark fa-2x"></i></span>
+          <h1 class="quiz-card__heading">Question:</h1>
+          <p class="quiz-card__question">Who won King of the Air 2020?</p>
+          <ul class="quiz-card__taglist">
+            <li class="quiz-card__tag-yellow">&num;sports</li>
+            <li class="quiz-card__tag-red">&num;kitesurfing</li>
+            <li class="quiz-card__tag-green">&num;champions</li>
+          </ul>
+          <details>
+            <summary>
+            Show answer
+            </summary>
+            <p>Jesse Richman ✔️</p>
+          </details>
+        </section>
+        <section class="quiz-card">
+          <span role="button" class="quiz-card__bookmark"> <i class="fas fa-bookmark fa-2x"></i></span>
+          <h1 class="quiz-card__heading">Question:</h1>
+          <p class="quiz-card__question">Which championships make up the Grand Slam?</p>
+          <ul class="quiz-card__taglist">
+            <li class="quiz-card__tag-red">&num;tennis</li>
+            <li class="quiz-card__tag-blue">&num;sports</li>
+            <li class="quiz-card__tag-yellow">&num;champions</li>
+          </ul>
+          <details>
+            <summary>
+              Show answer
+            </summary>
+            <p>Wimbledon, U.S. Open, French Open and Australian Open ✔️</p>
+          </details>
+        </section>
+    </section>
+
+    <section data-js="pageCreate" class="hidden page">
+       
+      <h2 class="color-yellow">Add Question</h2>
+        <textarea class="create__textarea"
+          rows="5"
+          placeholder="What is the longest river in the world?"
+        ></textarea>
+        <h2 class="color-red">Add Answer</h2>
+        <textarea class="create__textarea" rows="5" placeholder="River Nil"></textarea>
+        <h2 class="color-green">Add Tags</h2>
+        <textarea class="create__textarea" rows="5" placeholder="world, travel, geography"></textarea>
+
+      <button class="create__button">Submit</button>
+    </section>
+
+    <section data-js="pageSettings" class="hidden page">
+        <h2> This site is under construction. <br> Please visit again. </h2>
+    </section>
+
+  </main>
+
     <nav class="navigation">
-      <a href="index.html" class="navigation__item">
+      <a class="navigation__item" data-js="buttonHome">
         <i class="fas fa-home fa-lg"></i>
         <br />
         Home
       </a>
-      <a href="bookmarks.html" class="navigation__item">
+      <a class="navigation__item" data-js="buttonBookmark">
         <i class="fas fa-bookmark fa-lg"></i>
         Bookmarks
       </a>
-      <a href="create.html" class="navigation__item">
+      <a class="navigation__item" data-js="buttonCreate">
         <i class="fas fa-plus fa-lg"></i>
         Create
       </a>
-      <a href="settings.html" class="navigation__item">
+      <a class="navigation__item" data-js="buttonSettings">
         <i class="fas fa-cog fa-lg"></i>
         Settings
       </a>
+    </nav>
   </body>
 </html>
