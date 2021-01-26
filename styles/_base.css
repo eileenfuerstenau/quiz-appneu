@@ -43,3 +43,15 @@ input {
 textarea {
   width: 100%;
 }
+
+.create__button {
+  width: 90px;
+  height: 40px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  border: 2px black solid;
+  padding: 3px;
+  font-size: 100%;
+  justify-self: center;
+  margin-top: 20px;
+}
