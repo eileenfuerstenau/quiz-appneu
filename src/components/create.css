@@ -10,7 +10,6 @@
 }
 
 .color-red {
-  display: inline-block;
   background: linear-gradient(
       transparent,
       transparent 50%,
@@ -22,7 +21,6 @@
 }
 
 .color-yellow {
-  display: inline-block;
   background: linear-gradient(
       transparent,
       transparent 50%,
