@@ -100,6 +100,10 @@ details[open] summary::after {
   transform: rotate(45deg);
 }
 
+summary::-webkit-details-marker {
+  display: none;
+}
+
 details p {
   margin: 10px;
   text-align: center;
