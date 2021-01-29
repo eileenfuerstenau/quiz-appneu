@@ -7,7 +7,7 @@ const button4 = document.querySelector('[data-js=buttonSettings]')
 
 const page1 = document.querySelector('[data-js=pageHome]')
 const page2 = document.querySelector('[data-js=pageBookmark]')
-const page3 = document.querySelector('[data-js=pageCreate]')
+const page3 = document.querySelector('[data-js=Create]')
 const page4 = document.querySelector('[data-js=pageSettings]')
 
 button1.addEventListener('click', () => {
@@ -85,8 +85,6 @@ answerButton.addEventListener('click', showAnswer)
 */
 const quizCards = document.querySelectorAll('[data-js="quiz-card"]')
 
-console.log(quizCards)
-
 quizCards.forEach(card => {
   const button = card.querySelector('[data-js="answer-button"]')
   const answer = card.querySelector('[data-js="answer"]')
@@ -111,3 +109,19 @@ Frage:
   })
 
 */
+
+/* Add textmaxlength */
+
+const sections = document.querySelectorAll('[data-js="create__section"]')
+
+sections.forEach(form => {
+  const textArea = form.querySelector('[data-js="create__textarea"]')
+  const counter = form.querySelector('[data-js="create__letter-count"]')
+
+  textArea.addEventListener('input', () => {
+    const textLength = textArea.value.length
+    counter.textContent = `${textArea.maxLength - textLength}/ ${
+      textArea.maxLength
+    }`
+  })
+})
