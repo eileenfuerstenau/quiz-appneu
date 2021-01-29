@@ -37,3 +37,31 @@ button4.addEventListener('click', () => {
   page3.classList.add('hidden')
   page4.classList.remove('hidden')
 })
+
+/* Bookmark Toggle */
+
+const bookmark = getElement('bookmark')
+const bookmarkButton = getElement('bookmarkButton')
+const bookmarkButtons = document.querySelectorAll('[data-js="bookmarkButton"]')
+const bookmarks = document.querySelectorAll('[data-js="bookmark"]')
+
+function getElement(nameJS) {
+  return document.querySelector(`[data-js="${nameJS}"]`)
+}
+/*
+** Toggle 1 Bookmark **
+
+function toggleBookmark() {
+  bookmark.classList.toggle('fill')
+}
+
+bookmarkButton.addEventListener('click', toggleBookmark) 
+
+Toggle All Bookmarks
+*/
+
+bookmarks.forEach(button => {
+  button.addEventListener('click', () => {
+    button.classList.toggle('fa')
+  })
+})
