@@ -15,7 +15,7 @@
   <main class="app-grid__main"> 
 
     <section class="page" data-js="pageHome"> 
-          <section class="quiz-card">
+          <section class="quiz-card" data-js="quiz-card">
             <span role="button" class="quiz-card__bookmark" data-js="bookmarkButton"> 
               <i class="far fa-bookmark fa-2x fa-2x" data-js="bookmark"></i></i>
             </span>
@@ -26,14 +26,12 @@
               <li class="quiz-card__tag-yellow">&num;geography</li>
               <li class="quiz-card__tag-red">&num;capital cities</li>
             </ul>
-            <details>
-              <summary>
-              Show answer
-              </summary>
-              <p>Santiago de Chile ✔️</p>
-            </details>
+            <section class="quizcard__answersection">
+              <button data-js="answer-button" class="answer-button"> Show answer</button>
+              <p data-js="answer" class="hidden"> Santiago de Chile </p>
+            </section>
           </section>
-          <section class="quiz-card">
+          <section class="quiz-card" data-js="quiz-card">
             <span role="button" class="quiz-card__bookmark" data-js="bookmarkButton"> 
               <i class="far fa-bookmark fa-2x fa-2x" data-js="bookmark"></i></i>
             </span>
@@ -44,14 +42,12 @@
               <li class="quiz-card__tag-red">&num;kitesurfing</li>
               <li class="quiz-card__tag-green">&num;champions</li>
             </ul>
-            <details>
-              <summary>
-              Show answer
-              </summary>
-              <p>Jesse Richman ✔️</p>
-            </details>
+            <section class="quizcard__answersection">
+              <button data-js="answer-button" class="answer-button"> Show answer</button>
+              <p data-js="answer" class="hidden"> Jesse Richman </p>
+            </section>
           </section>
-          <section class="quiz-card">
+          <section class="quiz-card" data-js="quiz-card">
             <span role="button" class="quiz-card__bookmark" data-js="bookmarkButton"> 
               <i class="far fa-bookmark fa-2x fa-2x" data-js="bookmark"></i></i>
             </span>
@@ -62,19 +58,17 @@
               <li class="quiz-card__tag-blue">&num;sports</li>
               <li class="quiz-card__tag-yellow">&num;champions</li>
             </ul>
-            <details>
-              <summary>
-                Show answer
-              </summary>
-              <p>Wimbledon, U.S. Open, French Open and Australian Open ✔️</p>
-            </details>
+            <section class="quizcard__answersection" data-js="answer-section">
+              <button data-js="answer-button" class="answer-button"> Show answer</button>
+              <p data-js="answer" class="hidden"> Wimbledon, U.S. Open, French Open and Australian Open </p>
+            </section>
           </section>
     </section>
 
 
     <section data-js="pageBookmark" class="hidden page">
 
-        <section class="quiz-card">
+        <section class="quiz-card" data-js="quiz-card">
           <span role="button" class="quiz-card__bookmark"> <i class="fas fa-bookmark fa-2x"></i></span>
           <h1 class="quiz-card__heading">Question:</h1>
           <p class="quiz-card__question">What is the capital of Chile?</p>
@@ -83,14 +77,12 @@
             <li class="quiz-card__tag-yellow">&num;geography</li>
             <li class="quiz-card__tag-red">&num;capital cities</li>
           </ul>
-          <details>
-            <summary>
-            Show answer
-            </summary>
-            <p>Santiago de Chile ✔️</p>
-          </details>
+          <section class="quizcard__answersection" data-js="answer-section">
+            <button data-js="answer-button" class="answer-button"> Show answer</button>
+            <p data-js="answer" class="hidden"> Santiago de Chile </p>
+          </section>
         </section>
-        <section class="quiz-card">
+        <section class="quiz-card" data-js="quiz-card">
           <span role="button" class="quiz-card__bookmark"> <i class="fas fa-bookmark fa-2x"></i></span>
           <h1 class="quiz-card__heading">Question:</h1>
           <p class="quiz-card__question">Who won King of the Air 2020?</p>
@@ -99,14 +91,12 @@
             <li class="quiz-card__tag-red">&num;kitesurfing</li>
             <li class="quiz-card__tag-green">&num;champions</li>
           </ul>
-          <details>
-            <summary>
-            Show answer
-            </summary>
-            <p>Jesse Richman ✔️</p>
-          </details>
+          <section class="quizcard__answersection" data-js="answer-section">
+            <button data-js="answer-button" class="answer-button"> Show answer</button>
+            <p data-js="answer" class="hidden"> Jesse Richman </p>
+          </section>
         </section>
-        <section class="quiz-card">
+        <section class="quiz-card" data-js="quiz-card">
           <span role="button" class="quiz-card__bookmark"> <i class="fas fa-bookmark fa-2x"></i></span>
           <h1 class="quiz-card__heading">Question:</h1>
           <p class="quiz-card__question">Which championships make up the Grand Slam?</p>
@@ -115,12 +105,11 @@
             <li class="quiz-card__tag-blue">&num;sports</li>
             <li class="quiz-card__tag-yellow">&num;champions</li>
           </ul>
-          <details>
-            <summary>
-              Show answer
-            </summary>
-            <p>Wimbledon, U.S. Open, French Open and Australian Open ✔️</p>
-          </details>
+          <section class="quizcard__answersection" data-js="answer-section">
+            <button data-js="answer-button" class="answer-button"> Show answer</button>
+            <p data-js="answer" class="hidden"> Wimbledon, U.S. Open, French Open and Australian Open</p>
+          </section>
+
         </section>
     </section>
 
