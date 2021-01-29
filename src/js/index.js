@@ -60,8 +60,54 @@ bookmarkButton.addEventListener('click', toggleBookmark)
 Toggle All Bookmarks
 */
 
-bookmarks.forEach(button => {
-  button.addEventListener('click', () => {
-    button.classList.toggle('fa')
+bookmarks.forEach(bookmark => {
+  bookmark.addEventListener('click', () => {
+    bookmark.classList.toggle('fa')
   })
 })
+
+/* Show answer*/
+
+/*
+ ** Show 1 answer ** 
+
+/*
+const answer = getElement('answer')
+const answerButton = getElement('answer-button')
+
+console.log(answerButton)
+
+function showAnswer() {
+  answer.classList.toggle('hidden')
+}
+
+answerButton.addEventListener('click', showAnswer)
+*/
+const quizCards = document.querySelectorAll('[data-js="quiz-card"]')
+
+console.log(quizCards)
+
+quizCards.forEach(card => {
+  const button = card.querySelector('[data-js="answer-button"]')
+  const answer = card.querySelector('[data-js="answer"]')
+  button.addEventListener('click', () => {
+    answer.classList.toggle('hidden')
+  })
+})
+
+/*
+Frage:
+
+  const answerSections = document.querySelectorAll('[data-js="answer-section"]')
+
+  console.log(answerSections)
+
+  answerSections.forEach(section => {
+    const button = section.querySelector('[data-js="answer-button"]')
+    const answer = section.querySelector('[data-js="answer"]')
+    button.addEventListener('click', () => {
+      answer.classList.toggle('hidden')
+    })
+  })
+
+*/
