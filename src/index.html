@@ -113,19 +113,28 @@
         </section>
     </section>
 
-    <section data-js="pageCreate" class="hidden page">
-       
-      <h2 class="color-yellow">Add Question</h2>
-        <textarea class="create__textarea"
-          rows="5"
-          placeholder="What is the longest river in the world?"
-        ></textarea>
-        <h2 class="color-red">Add Answer</h2>
-        <textarea class="create__textarea" rows="5" placeholder="River Nil"></textarea>
-        <h2 class="color-green">Add Tags</h2>
-        <textarea class="create__textarea" rows="5" placeholder="world, travel, geography"></textarea>
-
-      <button class="create__button">Submit</button>
+    <section data-js="Create" class="hidden page">
+      <form>
+        <section data-js="create__section"> 
+          <label class="color-yellow" data-js="Create__label">Add Question</label>
+          <span class="create__letter-count" data-js="create__letter-count"
+          >150/150</span>
+          <input class="create__textarea" data-js="create__textarea" maxLength="150" placeholder="What is the longest river in the world?"></input>
+        </section>
+        <section data-js="create__section">
+          <label class="color-red" data-js="Create__label">Add Answer</label>
+          <span class="create__letter-count" data-js="create__letter-count"
+          >150/150</span>
+          <input class="create__textarea" data-js="create__textarea"  maxLength="150" placeholder="River Nil"></input>
+        </section>
+        <section data-js="create__section">
+          <label class="color-green" data-js="Create__label">Add Tags</label>
+          <span class="create__letter-count" data-js="create__letter-count"
+          >150/150</span>
+          <input class="create__textarea" data-js="create__textarea"  maxLength="150" placeholder="world, travel, geography"></input>
+        </section>
+          <button class="create__button">Submit</button>
+      </form>
     </section>
 
     <section data-js="pageSettings" class="hidden page">
