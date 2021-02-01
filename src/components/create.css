@@ -1,4 +1,5 @@
-.color-green {
+.create__heading--color-green {
+  font-size: 150%;
   background: linear-gradient(
       transparent,
       transparent 50%,
@@ -9,7 +10,8 @@
     no-repeat;
 }
 
-.color-red {
+.create__heading--color-red {
+  font-size: 150%;
   background: linear-gradient(
       transparent,
       transparent 50%,
@@ -20,7 +22,8 @@
     no-repeat;
 }
 
-.color-yellow {
+.create__heading--color-yellow {
+  font-size: 150%;
   background: linear-gradient(
       transparent,
       transparent 50%,
@@ -33,4 +36,20 @@
 
 .create__textarea {
   width: 350px;
+  height: 40px;
+}
+
+.create__letter-count {
+  font-size: 60%;
+}
+
+.create__form {
+  display: grid;
+  place-items: center;
+}
+
+.create__button {
+  border: 2px solid #ddd;
+  padding: 4px;
+  margin: 0;
 }
