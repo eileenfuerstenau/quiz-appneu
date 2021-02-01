@@ -29,3 +29,7 @@
 i {
   margin: 3px;
 }
+
+.active-icon {
+  color: goldenrod;
+}
