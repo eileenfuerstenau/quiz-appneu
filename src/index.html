@@ -14,7 +14,7 @@
 
   <main class="app-grid__main"> 
 
-    <section class="page" data-js="pageHome"> 
+    <section class="page" data-js="page" data-name="home"> 
           <section class="quiz-card" data-js="quiz-card">
             <span role="button" class="quiz-card__bookmark" data-js="bookmarkButton"> 
               <i class="far fa-bookmark fa-2x fa-2x" data-js="bookmark"></i></i>
@@ -66,7 +66,7 @@
     </section>
 
 
-    <section data-js="pageBookmark" class="hidden page">
+    <section data-js="page" class="hidden page" data-name="bookmark">
 
         <section class="quiz-card" data-js="quiz-card">
           <span role="button" class="quiz-card__bookmark"> <i class="fas fa-bookmark fa-2x"></i></span>
@@ -113,7 +113,7 @@
         </section>
     </section>
 
-    <section data-js="create" class="hidden page">
+    <section data-js="page" class="hidden page" data-name="create">
       <form data-js="form" class="create__form">
         <section data-js="create__section"> 
           <label for="question-input" class="create__heading--color-yellow" data-js="create__label" >Add Question</label>
@@ -137,27 +137,27 @@
       </form>
     </section>
 
-    <section data-js="pageSettings" class="hidden page">
+    <section data-js="page" class="hidden page" data-name="settings">
         <h2> This site is under construction. <br> Please visit again. </h2>
     </section>
 
   </main>
 
     <nav class="navigation">
-      <a class="navigation__item" data-js="buttonHome">
+      <a class="navigation__item active-icon" data-js="nav" data-name="home">
         <i class="fas fa-home fa-lg"></i>
         <br />
         Home
       </a>
-      <a class="navigation__item" data-js="buttonBookmark">
+      <a class="navigation__item" data-js="nav" data-name="bookmark">
         <i class="fas fa-bookmark fa-lg"></i>
         Bookmarks
       </a>
-      <a class="navigation__item" data-js="buttonCreate">
+      <a class="navigation__item" data-js="nav" data-name="create">
         <i class="fas fa-plus fa-lg"></i>
         Create
       </a>
-      <a class="navigation__item" data-js="buttonSettings">
+      <a class="navigation__item" data-js="nav" data-name="settings">
         <i class="fas fa-cog fa-lg"></i>
         Settings
       </a>
