@@ -7,7 +7,7 @@ const button4 = document.querySelector('[data-js=buttonSettings]')
 
 const page1 = document.querySelector('[data-js=pageHome]')
 const page2 = document.querySelector('[data-js=pageBookmark]')
-const page3 = document.querySelector('[data-js=Create]')
+const page3 = document.querySelector('[data-js=create]')
 const page4 = document.querySelector('[data-js=pageSettings]')
 
 button1.addEventListener('click', () => {
@@ -38,18 +38,14 @@ button4.addEventListener('click', () => {
   page4.classList.remove('hidden')
 })
 
-/* Bookmark Toggle */
-
-const bookmark = getElement('bookmark')
-const bookmarkButton = getElement('bookmarkButton')
-const bookmarkButtons = document.querySelectorAll('[data-js="bookmarkButton"]')
-const bookmarks = document.querySelectorAll('[data-js="bookmark"]')
-
 function getElement(nameJS) {
   return document.querySelector(`[data-js="${nameJS}"]`)
 }
-/*
-** Toggle 1 Bookmark **
+
+/* ** Toggle 1 Bookmark **
+
+const bookmark = getElement('bookmark')
+const bookmarkButton = getElement('bookmarkButton')
 
 function toggleBookmark() {
   bookmark.classList.toggle('fill')
@@ -57,16 +53,17 @@ function toggleBookmark() {
 
 bookmarkButton.addEventListener('click', toggleBookmark) 
 
-Toggle All Bookmarks
+** Toggle All Bookmarks ** 
+
 */
+
+const bookmarks = document.querySelectorAll('[data-js="bookmark"]')
 
 bookmarks.forEach(bookmark => {
   bookmark.addEventListener('click', () => {
     bookmark.classList.toggle('fa')
   })
 })
-
-/* Show answer*/
 
 /*
  ** Show 1 answer ** 
@@ -82,7 +79,10 @@ function showAnswer() {
 }
 
 answerButton.addEventListener('click', showAnswer)
+
+** Show all answers ** 
 */
+
 const quizCards = document.querySelectorAll('[data-js="quiz-card"]')
 
 quizCards.forEach(card => {
@@ -92,23 +92,6 @@ quizCards.forEach(card => {
     answer.classList.toggle('hidden')
   })
 })
-
-/*
-Frage:
-
-  const answerSections = document.querySelectorAll('[data-js="answer-section"]')
-
-  console.log(answerSections)
-
-  answerSections.forEach(section => {
-    const button = section.querySelector('[data-js="answer-button"]')
-    const answer = section.querySelector('[data-js="answer"]')
-    button.addEventListener('click', () => {
-      answer.classList.toggle('hidden')
-    })
-  })
-
-*/
 
 /* Add textmaxlength */
 
@@ -125,3 +108,32 @@ sections.forEach(form => {
     }`
   })
 })
+
+/* Add form reset, preventdefault and focus */
+
+const form = getElement('form')
+const firstInput = document.querySelector('#question-input')
+
+form.addEventListener('submit', event => {
+  event.preventDefault()
+  form.reset()
+  firstInput.focus()
+  sections.forEach(section => {
+    const textArea = section.querySelector('[data-js="create__textarea"]')
+    const counter = section.querySelector('[data-js="create__letter-count"]')
+    const textLength = textArea.value.length
+    counter.textContent = `${textArea.maxLength}/ ${textArea.maxLength}`
+  })
+})
+
+/* const form = getElement('form')
+const firstInput = document.querySelector('#first-input')
+
+form.addEventListener('submit', event => {
+  const counter = document.querySelectorAll('[data-js="create__letter-count"]')
+  event.preventDefault()
+  form.reset()
+  firstInput.focus()
+  counter.textContent = 150
+})
+ */

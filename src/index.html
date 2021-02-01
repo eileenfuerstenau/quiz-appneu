@@ -113,25 +113,25 @@
         </section>
     </section>
 
-    <section data-js="Create" class="hidden page">
-      <form>
+    <section data-js="create" class="hidden page">
+      <form data-js="form" class="create__form">
         <section data-js="create__section"> 
-          <label class="color-yellow" data-js="Create__label">Add Question</label>
-          <span class="create__letter-count" data-js="create__letter-count"
+          <label for="question-input" class="create__heading--color-yellow" data-js="create__label" >Add Question</label>
+          <span class="create__letter-count" data-js="create__letter-count" 
           >150/150</span>
-          <input class="create__textarea" data-js="create__textarea" maxLength="150" placeholder="What is the longest river in the world?"></input>
+          <input id="question-input" class="create__textarea" data-js="create__textarea" maxLength="150" placeholder="What is the longest river in the world?"></input> 
         </section>
         <section data-js="create__section">
-          <label class="color-red" data-js="Create__label">Add Answer</label>
+          <label for="answer-input" class="create__heading--color-red" data-js="create__label">Add Answer</label>
           <span class="create__letter-count" data-js="create__letter-count"
           >150/150</span>
-          <input class="create__textarea" data-js="create__textarea"  maxLength="150" placeholder="River Nil"></input>
+          <input id="answer-input" class="create__textarea" data-js="create__textarea"  maxLength="150" placeholder="River Nil"></input>
         </section>
         <section data-js="create__section">
-          <label class="color-green" data-js="Create__label">Add Tags</label>
+          <label for="tags-input" class="create__heading--color-green" data-js="create__label">Add Tags</label>
           <span class="create__letter-count" data-js="create__letter-count"
           >150/150</span>
-          <input class="create__textarea" data-js="create__textarea"  maxLength="150" placeholder="world, travel, geography"></input>
+          <input id="tags-input" class="create__textarea" data-js="create__textarea"  maxLength="150" placeholder="world, travel, geography"></input>
         </section>
           <button class="create__button">Submit</button>
       </form>
