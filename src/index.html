@@ -12,64 +12,85 @@
       <h1>Quiz Me</h1>
     </header>
 
-  <main class="app-grid__main"> 
-
-    <section class="page" data-js="page" data-name="home"> 
-          <section class="quiz-card" data-js="quiz-card">
-            <span role="button" class="quiz-card__bookmark" data-js="bookmarkButton"> 
-              <i class="far fa-bookmark fa-2x fa-2x" data-js="bookmark"></i></i>
-            </span>
-            <h1 class="quiz-card__heading">Question:</h1>
-            <p class="quiz-card__question">What is the capital of Chile?</p>
-            <ul class="quiz-card__taglist">
-              <li class="quiz-card__tag-blue">&num;travel</li>
-              <li class="quiz-card__tag-yellow">&num;geography</li>
-              <li class="quiz-card__tag-red">&num;capital cities</li>
-            </ul>
-            <section class="quizcard__answersection">
-              <button data-js="answer-button" class="answer-button"> Show answer</button>
-              <p data-js="answer" class="hidden"> Santiago de Chile </p>
-            </section>
-          </section>
-          <section class="quiz-card" data-js="quiz-card">
-            <span role="button" class="quiz-card__bookmark" data-js="bookmarkButton"> 
-              <i class="far fa-bookmark fa-2x fa-2x" data-js="bookmark"></i></i>
-            </span>
-            <h1 class="quiz-card__heading">Question:</h1>
-            <p class="quiz-card__question">Who won King of the Air 2020?</p>
-            <ul class="quiz-card__taglist">
-              <li class="quiz-card__tag-yellow">&num;sports</li>
-              <li class="quiz-card__tag-red">&num;kitesurfing</li>
-              <li class="quiz-card__tag-green">&num;champions</li>
-            </ul>
-            <section class="quizcard__answersection">
-              <button data-js="answer-button" class="answer-button"> Show answer</button>
-              <p data-js="answer" class="hidden"> Jesse Richman </p>
-            </section>
-          </section>
-          <section class="quiz-card" data-js="quiz-card">
-            <span role="button" class="quiz-card__bookmark" data-js="bookmarkButton"> 
-              <i class="far fa-bookmark fa-2x fa-2x" data-js="bookmark"></i></i>
-            </span>
-            <h1 class="quiz-card__heading">Question:</h1>
-            <p class="quiz-card__question">Which championships make up the Grand Slam?</p>
-            <ul class="quiz-card__taglist">
-              <li class="quiz-card__tag-red">&num;tennis</li>
-              <li class="quiz-card__tag-blue">&num;sports</li>
-              <li class="quiz-card__tag-yellow">&num;champions</li>
-            </ul>
-            <section class="quizcard__answersection" data-js="answer-section">
-              <button data-js="answer-button" class="answer-button"> Show answer</button>
-              <p data-js="answer" class="hidden"> Wimbledon, U.S. Open, French Open and Australian Open </p>
-            </section>
-          </section>
-    </section>
-
-
-    <section data-js="page" class="hidden page" data-name="bookmark">
-
+    <main class="app-grid__main">
+      <section class="page" data-js="page" data-name="home">
         <section class="quiz-card" data-js="quiz-card">
-          <span role="button" class="quiz-card__bookmark"> <i class="fas fa-bookmark fa-2x"></i></span>
+          <span
+            role="button"
+            class="quiz-card__bookmark"
+            data-js="bookmarkButton"
+          >
+            <i class="far fa-bookmark fa-2x fa-2x" data-js="bookmark"></i>
+          </span>
+          <h1 class="quiz-card__heading">Question:</h1>
+          <p class="quiz-card__question">What is the capital of Chile?</p>
+          <ul class="quiz-card__taglist">
+            <li class="quiz-card__tag-blue">&num;travel</li>
+            <li class="quiz-card__tag-yellow">&num;geography</li>
+            <li class="quiz-card__tag-red">&num;capital cities</li>
+          </ul>
+          <section class="quizcard__answersection">
+            <button data-js="answer-button" class="answer-button">
+              Show answer
+            </button>
+            <p data-js="answer" class="hidden">Santiago de Chile</p>
+          </section>
+        </section>
+        <section class="quiz-card" data-js="quiz-card">
+          <span
+            role="button"
+            class="quiz-card__bookmark"
+            data-js="bookmarkButton"
+          >
+            <i class="far fa-bookmark fa-2x fa-2x" data-js="bookmark"></i>
+          </span>
+          <h1 class="quiz-card__heading">Question:</h1>
+          <p class="quiz-card__question">Who won King of the Air 2020?</p>
+          <ul class="quiz-card__taglist">
+            <li class="quiz-card__tag-yellow">&num;sports</li>
+            <li class="quiz-card__tag-red">&num;kitesurfing</li>
+            <li class="quiz-card__tag-green">&num;champions</li>
+          </ul>
+          <section class="quizcard__answersection">
+            <button data-js="answer-button" class="answer-button">
+              Show answer
+            </button>
+            <p data-js="answer" class="hidden">Jesse Richman</p>
+          </section>
+        </section>
+        <section class="quiz-card" data-js="quiz-card">
+          <span
+            role="button"
+            class="quiz-card__bookmark"
+            data-js="bookmarkButton"
+          >
+            <i class="far fa-bookmark fa-2x fa-2x" data-js="bookmark"></i>
+          </span>
+          <h1 class="quiz-card__heading">Question:</h1>
+          <p class="quiz-card__question">
+            Which championships make up the Grand Slam?
+          </p>
+          <ul class="quiz-card__taglist">
+            <li class="quiz-card__tag-red">&num;tennis</li>
+            <li class="quiz-card__tag-blue">&num;sports</li>
+            <li class="quiz-card__tag-yellow">&num;champions</li>
+          </ul>
+          <section class="quizcard__answersection" data-js="answer-section">
+            <button data-js="answer-button" class="answer-button">
+              Show answer
+            </button>
+            <p data-js="answer" class="hidden">
+              Wimbledon, U.S. Open, French Open and Australian Open
+            </p>
+          </section>
+        </section>
+      </section>
+
+      <section data-js="page" class="hidden page" data-name="bookmark">
+        <section class="quiz-card" data-js="quiz-card">
+          <span role="button" class="quiz-card__bookmark">
+            <i class="fas fa-bookmark fa-2x"></i
+          ></span>
           <h1 class="quiz-card__heading">Question:</h1>
           <p class="quiz-card__question">What is the capital of Chile?</p>
           <ul class="quiz-card__taglist">
@@ -78,12 +99,16 @@
             <li class="quiz-card__tag-red">&num;capital cities</li>
           </ul>
           <section class="quizcard__answersection" data-js="answer-section">
-            <button data-js="answer-button" class="answer-button"> Show answer</button>
-            <p data-js="answer" class="hidden"> Santiago de Chile </p>
+            <button data-js="answer-button" class="answer-button">
+              Show answer
+            </button>
+            <p data-js="answer" class="hidden">Santiago de Chile</p>
           </section>
         </section>
         <section class="quiz-card" data-js="quiz-card">
-          <span role="button" class="quiz-card__bookmark"> <i class="fas fa-bookmark fa-2x"></i></span>
+          <span role="button" class="quiz-card__bookmark">
+            <i class="fas fa-bookmark fa-2x"></i
+          ></span>
           <h1 class="quiz-card__heading">Question:</h1>
           <p class="quiz-card__question">Who won King of the Air 2020?</p>
           <ul class="quiz-card__taglist">
@@ -92,56 +117,103 @@
             <li class="quiz-card__tag-green">&num;champions</li>
           </ul>
           <section class="quizcard__answersection" data-js="answer-section">
-            <button data-js="answer-button" class="answer-button"> Show answer</button>
-            <p data-js="answer" class="hidden"> Jesse Richman </p>
+            <button data-js="answer-button" class="answer-button">
+              Show answer
+            </button>
+            <p data-js="answer" class="hidden">Jesse Richman</p>
           </section>
         </section>
         <section class="quiz-card" data-js="quiz-card">
-          <span role="button" class="quiz-card__bookmark"> <i class="fas fa-bookmark fa-2x"></i></span>
+          <span role="button" class="quiz-card__bookmark">
+            <i class="fas fa-bookmark fa-2x"></i
+          ></span>
           <h1 class="quiz-card__heading">Question:</h1>
-          <p class="quiz-card__question">Which championships make up the Grand Slam?</p>
+          <p class="quiz-card__question">
+            Which championships make up the Grand Slam?
+          </p>
           <ul class="quiz-card__taglist">
             <li class="quiz-card__tag-red">&num;tennis</li>
             <li class="quiz-card__tag-blue">&num;sports</li>
             <li class="quiz-card__tag-yellow">&num;champions</li>
           </ul>
           <section class="quizcard__answersection" data-js="answer-section">
-            <button data-js="answer-button" class="answer-button"> Show answer</button>
-            <p data-js="answer" class="hidden"> Wimbledon, U.S. Open, French Open and Australian Open</p>
+            <button data-js="answer-button" class="answer-button">
+              Show answer
+            </button>
+            <p data-js="answer" class="hidden">
+              Wimbledon, U.S. Open, French Open and Australian Open
+            </p>
           </section>
+        </section>
+      </section>
 
-        </section>
-    </section>
-
-    <section data-js="page" class="hidden page" data-name="create">
-      <form data-js="form" class="create__form">
-        <section data-js="create__section"> 
-          <label for="question-input" class="create__heading--color-yellow" data-js="create__label" >Add Question</label>
-          <span class="create__letter-count" data-js="create__letter-count" 
-          >150/150</span>
-          <input id="question-input" class="create__textarea" data-js="create__textarea" maxLength="150" placeholder="What is the longest river in the world?"></input> 
-        </section>
-        <section data-js="create__section">
-          <label for="answer-input" class="create__heading--color-red" data-js="create__label">Add Answer</label>
-          <span class="create__letter-count" data-js="create__letter-count"
-          >150/150</span>
-          <input id="answer-input" class="create__textarea" data-js="create__textarea"  maxLength="150" placeholder="River Nil"></input>
-        </section>
-        <section data-js="create__section">
-          <label for="tags-input" class="create__heading--color-green" data-js="create__label">Add Tags</label>
-          <span class="create__letter-count" data-js="create__letter-count"
-          >150/150</span>
-          <input id="tags-input" class="create__textarea" data-js="create__textarea"  maxLength="150" placeholder="world, travel, geography"></input>
-        </section>
+      <section data-js="page" class="hidden page" data-name="create">
+        <form data-js="form" class="create__form">
+          <section data-js="create__section">
+            <label
+              for="question-input"
+              class="create__heading--color-yellow"
+              data-js="create__label"
+              >Add Question</label
+            >
+            <span class="create__letter-count" data-js="create__letter-count"
+              >150/150</span
+            >
+            <input
+              id="question-input"
+              class="create__textarea"
+              data-js="create__textarea"
+              maxlength="150"
+              placeholder="What is the longest river in the world?"
+            />
+          </section>
+          <section data-js="create__section">
+            <label
+              for="answer-input"
+              class="create__heading--color-red"
+              data-js="create__label"
+              >Add Answer</label
+            >
+            <span class="create__letter-count" data-js="create__letter-count"
+              >150/150</span
+            >
+            <input
+              id="answer-input"
+              class="create__textarea"
+              data-js="create__textarea"
+              maxlength="150"
+              placeholder="River Nil"
+            />
+          </section>
+          <section data-js="create__section">
+            <label
+              for="tags-input"
+              class="create__heading--color-green"
+              data-js="create__label"
+              >Add Tags</label
+            >
+            <span class="create__letter-count" data-js="create__letter-count"
+              >150/150</span
+            >
+            <input
+              id="tags-input"
+              class="create__textarea"
+              data-js="create__textarea"
+              maxlength="150"
+              placeholder="world, travel, geography"
+            />
+          </section>
           <button class="create__button">Submit</button>
-      </form>
-    </section>
+        </form>
+      </section>
 
-    <section data-js="page" class="hidden page" data-name="settings">
-        <h2> This site is under construction. <br> Please visit again. </h2>
-    </section>
-
-  </main>
+      <section data-js="page" class="hidden page" data-name="settings">
+        <h2>
+          This site is under construction. <br />
+          Please visit again.
+        </h2>
+      </section>
+    </main>
 
     <nav class="navigation">
       <a class="navigation__item active-icon" data-js="nav" data-name="home">
